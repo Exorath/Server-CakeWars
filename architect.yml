@@ -1,0 +1,31 @@
+handlers:
+  github:
+    plugins:
+      ConnectorPlugin:
+        oauth:
+          env: GITHUB_OAUTH
+        name: exorath/ConnectorPlugin
+        jar: ConnectorPlugin-(.*).jar
+      ExoBasePlugin:
+        oauth:
+          env: GITHUB_OAUTH
+        name: exorath/ExoBasePlugin
+        jar: ExoBasePlugin-(.*).jar
+  amazons3:
+    jar:
+      bucketName: exospigot
+      objectId: spigot.jar
+      accessKeyId:
+        env: AWS_ACCESS_KEY_ID
+      secretKey:
+        env: AWS_SECRET_KEY
+      region:
+        env: AWS_REGION
+  mapservice:
+    maps:
+      allMaps:
+        type: multi
+        address: "http://localhost:8080"
+        userId: exorathv1
+        envId: prod
+        prefix: mg.cakewars.
