@@ -4,6 +4,8 @@ metadata:
   name: server-cakewars
   labels:
     app: server-cakewars
+    type: spigot
+  namespace: servers
 spec:
   strategy:
     type: Recreate
@@ -24,3 +26,5 @@ spec:
           value: "<address>:8080"
         - name: PLAYERS_SERVICE_ADDRESS
           value: "<address>:8080"
+        stdin: true
+        tty: true
