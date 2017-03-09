@@ -1,0 +1,26 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: server-cakewars
+  labels:
+    app: server-cakewars
+spec:
+  strategy:
+    type: Recreate
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: server-cakewars
+    spec:
+      containers:
+      - name: server-cakewars
+        image: exorath/server-cakewars
+        ports:
+        - containerPort: 25565
+          protocol: TCP
+        env:
+        - name: CONNECTOR_SERVICE_ADDRESS
+          value: "<address>:8080"
+        - name: PLAYERS_SERVICE_ADDRESS
+          value: "<address>:8080"
