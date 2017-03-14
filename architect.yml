@@ -29,8 +29,8 @@ handlers:
   mapservice:
     maps:
       allMaps:
-        type: multi
+        type: single
         address: "http://localhost:8080"
-        userId: exorathv1
+        userId: test
+        mapId: hub.iw
         envId: prod
-        prefix: mg.cakewars.
