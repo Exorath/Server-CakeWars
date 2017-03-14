@@ -1,0 +1,5 @@
+connector:
+  gameId: cakewars
+  flavors:
+  - default
+  - fast
