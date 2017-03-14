@@ -1,0 +1,8 @@
+joincommands:
+  hubcmd:
+    name: Server Hub
+    cmds:
+    - hub
+    - lobby
+    filter:
+      gameId: lobby-cakewars
