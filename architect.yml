@@ -11,6 +11,11 @@ handlers:
           env: GITHUB_OAUTH
         name: exorath/ExoBasePlugin
         jar: ExoBasePlugin-(.*).jar
+      BaseGamePlugin:
+        oauth:
+          env: GITHUB_OAUTH
+        name: exorath/BaseGamePlugin
+        jar: BaseGamePlugin-(.*).jar
   amazons3:
     jar:
       bucketName: exospigot
