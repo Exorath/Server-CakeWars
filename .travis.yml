@@ -16,7 +16,7 @@ script:
     docker build -f Dockerfile.release -t exorath/server-cakewars:${version} .
 after_success:
   - if [ -n "$TRAVIS_TAG" ]; then
-    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+    docker login -u=exorath -p="$DOCKER_PASSWORD";
     echo "version $TRAVIS_TAG" ;
     docker push "exorath/server-cakewars:$TRAVIS_TAG" ;
-    fi 
+    fi
