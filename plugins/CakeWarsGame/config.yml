@@ -7,7 +7,7 @@ flavors:
         slot: 0
         items:
         - name: Wooden Sword
-          material: WOODEN_SWORD
+          material: WOOD_SWORD
           amount: 1
           slot: 0
         lore:
