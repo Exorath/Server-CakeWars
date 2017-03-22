@@ -1,0 +1,30 @@
+flavors:
+  default:
+    shop:
+      directory1:
+        name: Weapons
+        material: IRON_SWORD
+        slot: 0
+        items:
+        - name: Wooden Sword
+          material: WOODEN_SWORD
+          amount: 1
+          slot: 0
+        lore:
+        - Buy weapons here
+      directory2:
+        name: Armor
+        material: IRON_CHESTPLATE
+        slot: 1
+        items:
+        - name: Iron Boots
+          material: IRON_BOOTS
+          amount: 1
+          slot: 0
+        - name: Iron Leggings
+          material: IRON_LEGGINGS
+          amount: 1
+          slot: 1
+        lore:
+        - Buy Armor here!
+        - right now.
