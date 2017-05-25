@@ -1,0 +1,19 @@
+{
+"kitPackage": {
+  "name": "CakeWars kits",
+  "kits": {
+    "warrior": {
+      "name": "Warrior Kit",
+      "itemStack": {
+          "material": "IRON_SWORD"
+      },
+      "costs": {
+        "Crumbs": 10
+      },
+      "meta": {
+        "items" : {}
+      }
+    }
+  }
+}
+}
