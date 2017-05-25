@@ -11,6 +11,7 @@ flavors:
           amount: 1
           slot: 0
           cost:
+            iron: 16
         lore:
         - Buy weapons here
       - name: Armor
@@ -22,11 +23,17 @@ flavors:
           amount: 1
           slot: 0
           cost:
+            iron: 5
         - name: Iron Leggings
           material: IRON_LEGGINGS
           amount: 1
           slot: 1
           cost:
+            iron: 5
         lore:
         - Buy Armor here!
         - right now.
+    spawnerTypes:
+      iron:
+        material: IRON_INGOT
+        interval: 40
