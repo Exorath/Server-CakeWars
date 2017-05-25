@@ -21,6 +21,11 @@ handlers:
           env: GITHUB_OAUTH
         name: exorath/CakeWarsGamePlugin
         jar: CakeWarsGamePlugin-(.*).jar
+      ExoHUD:
+        oauth:
+          env: GITHUB_OAUTH
+        name: exorath/ExoHUD
+        jar: ExoHUD(.*).jar
   amazons3:
     jar:
       bucketName: exospigot
