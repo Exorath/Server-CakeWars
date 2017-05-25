@@ -10,6 +10,7 @@ flavors:
           material: WOOD_SWORD
           amount: 1
           slot: 0
+          cost:
         lore:
         - Buy weapons here
       - name: Armor
@@ -20,10 +21,12 @@ flavors:
           material: IRON_BOOTS
           amount: 1
           slot: 0
+          cost:
         - name: Iron Leggings
           material: IRON_LEGGINGS
           amount: 1
           slot: 1
+          cost:
         lore:
         - Buy Armor here!
         - right now.
