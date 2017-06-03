@@ -2,9 +2,45 @@ flavors:
   default:
     shop:
       directories:
+      - name: Blocks
+        material: GRASS
+        slot: 0
+        items:
+        - name: Sandstone
+          material: SANDSTONE
+          amount: 18
+          slot: 0
+          cost:
+            iron: 6
+        - name: Glass
+          material: GLASS
+          amount: 12
+          slot: 1
+          cost:
+            iron: 6
+        - name: Wooden Plank
+          material: WOOD
+          amount: 8
+          slot: 1
+          cost:
+            gold: 3
+        - name: Hay Bale
+          material: HAY_BLOCK
+          amount: 5
+          slot: 1
+          cost:
+            gold: 3
+        - name: Obsidian
+          material: OBSIDIAN
+          amount: 1
+          slot: 1
+          cost:
+            diamond: 1
+        lore:
+        - Placeable blocks
       - name: Weapons
         material: IRON_SWORD
-        slot: 0
+        slot: 1
         items:
         - name: Wooden Sword
           material: WOOD_SWORD
@@ -16,7 +52,7 @@ flavors:
         - Buy weapons here
       - name: Armor
         material: IRON_CHESTPLATE
-        slot: 1
+        slot: 2
         items:
         - name: Iron Boots
           material: IRON_BOOTS
