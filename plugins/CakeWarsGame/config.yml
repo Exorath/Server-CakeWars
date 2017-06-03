@@ -21,13 +21,13 @@ flavors:
         - name: Wooden Plank
           material: WOOD
           amount: 8
-          slot: 1
+          slot: 2
           cost:
             gold: 3
         - name: Hay Bale
           material: HAY_BLOCK
           amount: 5
-          slot: 1
+          slot: 3
           cost:
             gold: 3
         - name: Obsidian
