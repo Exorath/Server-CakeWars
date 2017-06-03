@@ -35,5 +35,14 @@ flavors:
         - right now.
     spawnerTypes:
       iron:
+        name: "&fIron"
         material: IRON_INGOT
         interval: 40
+      diamond:
+        name: "&cDiamond"
+        material: DIAMOND
+        interval: 400
+      gold:
+        name: "&eGold"
+        material: GOLD_INGOT
+        interval: 150
