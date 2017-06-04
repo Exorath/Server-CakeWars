@@ -33,7 +33,7 @@ flavors:
         - name: Obsidian
           material: OBSIDIAN
           amount: 1
-          slot: 1
+          slot: 4
           cost:
             diamond: 1
         lore:
