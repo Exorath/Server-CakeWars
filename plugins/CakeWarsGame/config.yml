@@ -1,5 +1,5 @@
 flavors:
-  default:
+  solo:
     shop:
       directories:
       - name: Blocks
