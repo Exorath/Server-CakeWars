@@ -10,7 +10,7 @@ script:
     if [ "$TRAVIS_TAG" == "" ]; then
     version=latest;
     fi ;
-    docker build --network host --build-arg GITHUB_OAUTH=${GITHUB_OAUTH} --build-arg AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID} --build-arg AWS_SECRET_KEY=${AWS_SECRET_KEY} --build-arg EULA=${EULA} --build-arg AWS_REGION=${AWS_REGION}  -t build-image . ;
+    docker build --network host --build-arg GITHUB_OAUTH=${GITHUB_OAUTH} --build-arg AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID} --build-arg AWS_SECRET_KEY=${AWS_SECRET_KEY} --build-arg EULA=${EULA} --build-arg AWS_REGION=${AWS_REGION}  -t build-image . || travis_terminate 1;
     docker create --name=build-container build-image cat;
     docker cp build-container:/usr/src/mcserver/. ./mcserver && docker cp build-container:/usr/bin/startserver ./mcserver;
     docker build -f Dockerfile.release -t exorath/server-cakewars:${version} .
