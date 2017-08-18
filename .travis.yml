@@ -1,7 +1,4 @@
 language: ruby
-sudo: required
-services:
-  - docker
 before_install:
   - sudo apt-get update && sudo apt-get install docker-ce && docker -v
   - docker pull exorath/mapservice && docker run -d -p 0.0.0.0:8080:8080 -e PORT=8080 -e AWS_REGION -e AWS_ACCESS_KEY_ID -e AWS_SECRET_KEY -e BUCKET_NAME exorath/mapservice
